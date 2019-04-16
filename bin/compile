@@ -260,7 +260,6 @@ log_build_scripts "$BUILD_DIR"
 run_prebuild_script "$BUILD_DIR" | output "$LOG_FILE"
 header "Installing dependencies" | output "$LOG_FILE"
 build_dependencies | output "$LOG_FILE"
-npm run build-production
 
 cache_build() {
   local cache_directories
